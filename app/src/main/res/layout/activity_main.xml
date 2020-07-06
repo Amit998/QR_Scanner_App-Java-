@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="ENTER THE MESSAGE"
+            android:layout_margin="12dp"
+            android:gravity="top"
+            android:id="@+id/txt_qr"></EditText>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QR CODE Generate"
+            android:textSize="16sp"
+            android:id="@+id/btn_generate"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_round"
+            android:layout_margin="12dp"
+            android:gravity="center"></Button>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:id="@+id/qr_code"
+            android:src="@drawable/qrcode"></ImageView>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_save"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="SAVE"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:background="@drawable/btn_round"
+                ></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_share"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="SHARE"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:background="@drawable/btn_round"
+                ></Button>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QR CODE SCANNER"
+            android:textSize="16sp"
+            android:id="@+id/btn_scan"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_round"
+            android:layout_margin="12dp"
+            android:gravity="center"></Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:textSize="20dp"
+            android:text="Result"
+            android:layout_margin="22dp"
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+           >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_margin="22dp"
+            android:gravity="left"
+            android:layout_marginTop="20dp"
+            android:id="@+id/result_scan">
+
+        </TextView>
+    </LinearLayout>
+
+</ScrollView>
